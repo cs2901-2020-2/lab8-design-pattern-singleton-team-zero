@@ -1,3 +1,5 @@
+package teamzero;
+
 public class ChocolateBoiler {
     private boolean empty;
     private boolean boiled;
