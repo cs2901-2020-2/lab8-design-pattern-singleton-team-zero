@@ -1,8 +1,8 @@
 package teamzero;
 
 public class ChocolateBoiler {
-    private boolean empty;
-    private boolean boiled;
+    protected boolean empty;
+    protected boolean boiled;
 
     public ChocolateBoiler() {
         empty = true;
