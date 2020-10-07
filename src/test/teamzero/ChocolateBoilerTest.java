@@ -8,13 +8,13 @@ import java.util.List;
 import java.util.Scanner;
 
 @Test
-public class ChocolateBoilerTest : extends ChocolateBoiler {
+public class ChocolateBoilerTest {
     ChocolateBoiler test = new ChocolateBoiler();
 
     public void fillTest() throws Exception {
         test.fill();
         boolean result = false;
-        if(test.empty == false && test.boiled == false) {
+        if(test.isEmpty() == false && test.isBoiled() == false) {
             result = true;
         }
 
@@ -24,7 +24,7 @@ public class ChocolateBoilerTest : extends ChocolateBoiler {
     public void boilTest() throws Exception {
         test.boil();
         boolean result = false;
-        if(test.boiled == true) {
+        if(test.isBoiled() == true) {
             result = true;
         }
 
@@ -34,7 +34,7 @@ public class ChocolateBoilerTest : extends ChocolateBoiler {
     public void drainTest() throws Exception {
         test.drain();
         boolean result = false;
-        if(test.boiled == false && test.empty == false) {
+        if(test.isBoiled() == false && test.isEmpty() == false) {
             result = true;
         }
 
