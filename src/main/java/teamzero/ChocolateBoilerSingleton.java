@@ -1,9 +1,11 @@
 package teamzero;
+import java.util.logging.Logger;
 
 public class ChocolateBoilerSingleton {
     private static ChocolateBoilerSingleton instance;
     private boolean empty;
     private boolean boiled;
+    static final Logger logger = Logger.getLogger(ChocolateBoilerSingleton.class.getName());
 
     private Singleton(){
         empty = true;
@@ -11,8 +13,11 @@ public class ChocolateBoilerSingleton {
     }
 
     public static ChocolateBoilerSingleton getInstance() {
-        if (instance = null){
+        if (instance == null){
             instance = new ChocolateBoilerSingleton();
+            logger.info("Instance Created");
+        }else{
+            logger.info("Already instance exist");
         }
         return instance;
     }
