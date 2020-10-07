@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cs2901</groupId>
-    <artifactId>lab8</artifactId>
+    <artifactId>lab8-design-pattern-singleton-team-zero</artifactId>
     <version>0.1</version>
 
     <properties>
