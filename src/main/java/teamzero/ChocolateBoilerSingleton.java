@@ -7,7 +7,7 @@ public class ChocolateBoilerSingleton {
     private boolean boiled;
     static final Logger logger = Logger.getLogger(ChocolateBoilerSingleton.class.getName());
 
-    private Singleton(){
+    private ChocolateBoilerSingleton(){
         empty = true;
         boiled = false;
     }
